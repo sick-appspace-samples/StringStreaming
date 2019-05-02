@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="StringStreaming">
+        <crown name="StringStreaming">
+            <desc>user script</desc>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="tags">Lua</meta>
+        <entry path="scripts" default="StringStreaming.lua">
+            <file type="text/x-lua">StringStreaming.lua</file>
+        </entry>
+    </application>
+</manifest>
