@@ -1,7 +1,9 @@
 ## StringStreaming
+
 Streaming binary data using the Lua functions string.pack() / string.unpack().
 
 ### Description
+
 This sample shows the streaming of data packed with the Lua string.pack function.
 First the data is packed (serialized in binary form) and written to a file.
 Then the same file is read, unpacked and the data is stored back to variables.
@@ -11,4 +13,5 @@ information about the format string can be found in the component description or
 in the Lua reference manual.
 
 ### Topics
-Programming-Pattern, Sample, SICK-AppSpace
+
+programming-pattern, sample, sick-appspace

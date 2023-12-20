@@ -10,7 +10,6 @@ local LONG = 2464321
 
 --Start of Function and Event Scope-----------------------------------------------
 
---@packStringString()
 local function packString()
   --'HBL' = Unsinged short (H), unsinged byte (B) and unsinged long (L)
   --More information about the format can be found in the string component description
@@ -22,7 +21,6 @@ local function packString()
   File.close(file)
 end
 
---@unpackString()
 local function unpackString()
   -- Reading binary data from file
   local file = File.open('/private/TestStringPacks.bin', 'rb')
@@ -37,12 +35,12 @@ local function unpackString()
   print('value 3 read: ' .. tostring(value3))
 end
 
---Declaration of the 'main' function as an entry point for the event loop.
---@main()
+---Declaration of the 'main' function as an entry point for the event loop.
 local function main()
   packString()
   unpackString()
 end
+
 --The following registration is part of the global scope which runs once after startup
 --Registration of the 'main' function to the Engine.OnStarted event
 Script.register('Engine.OnStarted', main)
